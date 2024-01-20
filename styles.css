@@ -1,0 +1,106 @@
+h1, h2 {
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f0f0f0; /* Slightly off-white background for light mode */
+    color: #333; /* Dark grey text for light mode */
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #008000;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #008000; /* Add a border around the links */
+    border-radius: 5px; /* Add rounded corners to the border */
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2b2b2b;
+    color: #d3ffd3;
+    text-decoration: none;
+}
+
+.dark-mode nav a {
+    color: #d3ffd3;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #2b2b2b;
+    border: 1px solid #d3ffd3; /* Add a border around the links */
+    border-radius: 5px; /* Add rounded corners to the border */
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+.dark-mode nav a:hover {
+    background-color: #f0f0f0;
+    color: #008000;
+    text-decoration: none;
+}
+
+section {
+    text-align: center;
+}
+
+.dark-mode {
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+}
+
+.dark-mode h1,
+.dark-mode h2 {
+    color: #d3ffd3;
+}
+
+button#darkModeToggle {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px; /* Add rounded corners to the border */
+    cursor: pointer;
+    color: #d3ffd3;
+    border: 1px solid #d3ffd3; /* Add a border around the button */
+    background-color: #2b2b2b; /* Dark background color for the button in light mode */
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+button#darkModeToggle:hover {
+    color: #008000;
+    border: 1px solid #008000; /* Add a border around the button */
+    background-color: #e0e0e0; /* Light background color for the button in dark mode */
+}
+
+.dark-mode button#darkModeToggle {
+    color: #008000;
+    border: 1px solid #008000; /* Add a border around the button */
+    background-color: #e0e0e0; /* Light background color for the button in dark mode */
+}
+
+.dark-mode button#darkModeToggle:hover {
+    background-color: #2b2b2b; /* Darker hover background color for the button in light mode */
+    color: #d3ffd3;
+    border: 1px solid #d3ffd3;
+}
