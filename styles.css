@@ -8,6 +8,18 @@ body {
     transition: background-color 0.3s, color 0.3s;
     background-color: #f0f0f0; /* Slightly off-white background for light mode */
     color: #333; /* Dark grey text for light mode */
+    /*visibility: hidden; /* Hide the content until the preferred mode is determined */
+}
+
+.project-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+code {
+    font-size: 16px; /* Adjust the font size to your preference */
+    font-family: 'Courier New', monospace; /* Use a monospaced font for code */
 }
 
 header {
@@ -65,7 +77,7 @@ section {
     text-align: center;
 }
 
-.dark-mode {
+body.dark-mode {
     background-color: #2b2b2b;
     color: #f0f0f0;
 }
@@ -103,4 +115,10 @@ button#darkModeToggle:hover {
     background-color: #2b2b2b; /* Darker hover background color for the button in light mode */
     color: #d3ffd3;
     border: 1px solid #d3ffd3;
+}
+
+.academic-citation {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-left: 2px solid #008000; /* Border color for the left side of the citation */
 }
